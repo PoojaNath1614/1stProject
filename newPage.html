@@ -1,0 +1,41 @@
+<html>
+    <head>
+        <title>It's the new page</title>
+	<style>
+		body{
+			color:blue;
+			background:yellow;
+		}
+		.heading{
+			background:pink;
+			text-align:center;
+		}
+		button{
+			color:white;
+			background:green;
+		}
+	</style>
+    </head>
+    <body>
+         <div class="heading">
+	     <p>WELCOME TO THE PAGE</p>
+	 </div><br><br>
+	 <div class="btn">
+	     <label>Type your name here: <label>
+	     <input type="text" id="name">
+	     <button id="btn">CLICK HERE</button>
+	 </div>
+	 paragraph
+6ftftug
+	 
+   
+        <script>
+	      let theInp=document.getElementById("name");
+	      let mybtn=document.getElementById("btn");
+	      mybtn.addEventListener('click',()=>{
+		  console.log(theInp.value);
+	      });
+        </script>
+
+    </body>
+</html>
