@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>form submitted</title>
+	<style>
+		body{
+			background-color:green;
+		}
+	</style>
+</head>
+<body>
+	<!-- 
+		Hello __ __, your roll no is __. 
+	-->
+	<h1 id="display"></h1>
+
+	<script>
+		const display = document.getElementById("display");
+		window.onload = () => {
+			const url = window.location.href;
+			const myArr = url.split("?")[1].split("&");
+			const fname = myArr[0].split("=")[1];
+			const lname = myArr[1].split("=")[1];
+			const rno = myArr[2].split("=")[1];
+			display.innerHTML = "Hello " + fname +" "+ lname +","+" your roll no is " +rno+".";
+		};
+	</script>
+</body>
+</html>
